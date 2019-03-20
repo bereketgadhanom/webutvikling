@@ -1,0 +1,324 @@
+/* Alt */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* HTML*/
+html {
+  background-size: cover;
+  background-color: #c0c0c0;
+}
+
+/*  Body */
+body {
+  font-family: serif;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  max-width: 90%;
+  grid-template-rows: minmax(auto, max-content);
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+    body, header, nav, footer, figure, img, pre, iframe, p {
+    max-width: 100%;
+  }
+  .wordpress-install-article {
+    display: flex;
+    flex-direction: column;
+  }
+ .wordpress-install .wordpress-install-article section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  body, header, nav, footer, figure, img, iframe, p {
+    max-width: 100%;
+  }
+  nav>ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  section{
+    width: 100%;
+  }
+  section img{
+    width: 90%;
+  }
+  .wordpress-install .wordpress-install-article section {
+    width: 100%;
+  }
+}
+
+/*  Header*/
+header {
+  display: grid;
+  grid-area: header;
+  text-align: center;
+  background-image: url("../bilder/header.jpg");
+  background-size: cover;
+  min-height: 250px;
+  margin: 0 1em 0 1em;
+  border-radius: 25px;
+}
+a.skip, a.skip:hover,
+a.skip:visited {
+  position: absolute;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+a.skip:focus, a.skip:active {
+  display: inline-block;
+  position: static;
+  margin-left: 40%;
+  width: 20%;
+  height: 30px;
+  background-color: #111111;
+  color: #ffffff;
+}
+header h1 {
+  font-style: oblique;
+  font-size: 250%;
+}
+
+
+/* Nav */
+nav {
+  display: grid;
+  grid-area: nav;
+  margin: 0 1em 1em 1em;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #F0F8FF;
+  border-radius: 3em 3em 0 0;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10em;
+  background-color: #2f4f4f;
+  margin: 0.6em;
+  padding: 0.5em;
+  border-radius: 25px;
+  text-align: center;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  font-size: 125%;
+  color: white;
+}
+
+/* dropdown navigasjon*/
+.dropdown-content {
+  display: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border-radius: 10%;
+}
+
+.dropdown-content>li {
+  display: inline-block;
+  margin: 0.1em 0.1em 0.1em 0;
+  background-color: #2f4f4f;
+  width: 10em;
+  border-radius: 15px;
+}
+
+.dropdown-content>li>a {
+  text-decoration: none;
+  font-size: 110%;
+  text-align: left;
+  color: white;
+}
+
+/* HOVER Navigasjon*/
+nav>ul>li:hover {
+  display: inline-block;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.dropdown-content:hover,
+.dropdown-content>li {
+  display: inline-block;
+}
+
+.dropdown-content>li:hover {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown>.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover>.dropdown-content {
+  display: block;
+  list-style: none;
+  margin: 5% 5% 5% 35%;
+  padding: 1em;
+  z-index: 1000;
+}
+
+:focus-within>.dropdown-content {
+  display: inline-block;
+  list-style: none;
+  padding: 1em;
+  margin: 15% 5% 5% 0;
+  z-index: 1000;
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: row;
+  grid-area: main;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 0 1em 0 1em;
+}
+
+/* Artikler */
+article {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding-bottom: 2em;
+  width: 100%;
+}
+
+article>h2 {
+  font-style: oblique;
+  font-size: 150%;
+  text-align: center;
+  margin: 1.5em 1.5em 0 1.5em;
+}
+
+main>article>h3, h4 {
+  font-style: oblique;
+  font-size: 100%;
+  margin: 1.5em 1.5em 0 1.5em;
+}
+
+main>article>a {
+  font-style: oblique;
+  font-size: 100%;
+  margin: 0 0 0 1.5em;
+}
+
+main>article>p {
+  margin: 0.5em 1.5em 1.5em 1.5em;
+  font-size: 110%;
+  color: #000000;
+}
+
+main>figure {
+  margin: 1em;
+}
+
+main>figure>img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 2em;
+}
+
+main>figure>figcaption {
+  font-style: oblique;
+  text-align: center;
+  color: #2f4f4f;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-area: footer;
+  text-align: center;
+  margin: 1em 1em 0 1em;
+  border-radius: 0 0 3em 3em;
+  background-color: #ffffff;
+}
+
+main article>iframe {
+  width: 95%;
+  margin: 1em;
+  height: 40em;
+  border-radius: 25px;
+}
+
+/*  Wordpress Installasjonen */
+.wordpress-install {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: main;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 0 1em 0 1em;
+}
+#articleheader{
+  display: none;
+}
+.wordpress-install-article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin: 0 0.2em 0 1em;
+  vertical-align: baseline;
+  max-width: 95%;
+}
+
+.wordpress-install-article section {
+  width: 45%;
+  margin: 0;
+  height: fit-content;
+  align-self: flex-start;
+  vertical-align: baseline;
+}
+
+.wordpress-install-article section img{
+  max-width: 90%;
+  margin-bottom: 1.5em;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Bredden for forskjellige enheter -->
+  <link rel="stylesheet" type="text/css" href="../css/article.css" />
+  <link rel="stylesheet" type="text/css" href="../css/print.css" media="print" /> <!-- Print CSS filen-->
+  <link rel="icon" href="../bilder/ikon.jpg" type="image/x-icon" /> <!-- Ikon bilde -->
+  <meta charset="UTF-8" />
+  <title> Web-utvikling </title> <!-- Titelen-->
+  <meta name="author" content="Bereket G. Adhanom"> <!-- Forfatteren/Utvikleren-->
+</head>
+<!-- Body -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <a class="skip" href="#css"> Skip to CSS layout </a>
+    <h1> Web-utvikling </h1>
+  </header>
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li> <a href="index.html"> Hjem </a> </li>
+      <li class="dropdown">
+        <a href="#"> Artikler </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/git_github.html"> Git/Github </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/media_type.html"> Media Type </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/css_layout.html"> CSS Layout </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/responsiv_design.html"> Responiv design </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/wamp.html"> WAMP server </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/uu.html"> Universell utforming </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/cms.html"> CMS </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/wordpress.html"> Wordpress </a> </li>
+          <li> <a href="https://github.com/bereketgadhanom/webutvikling"> Min github </a> </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#"> Obliger </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig1/html/index.html"> Oblig-1 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig2/html/index.html"> Oblig-2 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig3/html/index.html"> Oblig-3 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig4/html/index.html"> Oblig-4 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/index.html"> Oblig-5 </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Main -->
+  <main>
+    <!-- Artikler -->
+    <article>
+      <h2 id="css"> CSS Layout </h2>
+      <p>
+        CSS-layout er et utseende av en nettside som inneholder dokument, bilde, tekst eller annet som er utformet for å være mer attraktivt for brukere og hjelpe dem med å identifisere hva de ser.
+        CSS-layout teknikker tillater oss å ta elementer inneholdt i en nettside og kontrollere hvor de er plassert i forhold til deres standardposisjon.
+        Det er flere CSS-layout typer. Alle har egen fordeler og ulemper. Derfor må man ha god kunnskap å bruke dem effektivt.
+      </p>
+      <h3> CSS-layout metoder: </h3>
+      <ul>
+        <li>
+          Flexbox (Flexible Box Layout Module) er laget for å gjøre det enkelt for oss å legge ting ut som en rad eller som en kolonne. For å bruke flexbox, bruker du "display: flex" til overordnet elementet av elementene du vil legge ut. Alle sine
+          direkte barn blir deretter fleksible elementer.
+        </li>
+        <li>
+          Grid: mens flexbox er designet for et dimensjonalt layout, er Grid Layout designet for to dimensjoner. Det betyr at det kan ordres på rader og kolonner. Grid Layout gir oss en metode for å lage grid strukturer som er beskrevet i CSS. Det
+          hjelper oss med å lage layout som kan omdefineres. Grid Layout lar oss skille ordrenes elementer i kilden riktig fra sin visuelle presentasjon
+        </li>
+        <li>
+          Floats: er en CSS-posisjoneringsegenskap og har verdier left, right, inherit og none. Med float et element endrer oppførselen til elementet og blokk nivå elementene som følger det i normal flow. Elementet flyttes til venstre eller høyre og
+          fjernes fra normal flow. For å forstå formålet kan vi se på å skrive ut design. I et print layout kan bilder settes inn på siden slik at teksten brytes rundt dem etter behov.
+        </li>
+        <li>
+          Table-layout: har verdier auto og fixed. HTML-tabeller er bra for å vise tabelldata. men å bruke den som css er ikke anbefales. Tabelloppsett er ufleksible, vanskelig å feil søke og semantisk feil.
+        </li>
+        <li>
+          Framework: er en pakke som består av en struktur av filer og mapper med standardisert kode (HTML, CSS, JS dokumenter etc.) som kan brukes til å støtte utviklingen av nettsteder.
+        </li>
+      </ul>
+    </article>
+    <figure>
+      <img src="../bilder/css-layout.jpg" alt="CSS Layout">
+      <figcaption> Bilde: CSS-Layout </figcaption>
+    </figure>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p style="color:#2f4f4f">
+      &copy; Bereket G. Adhanom <br />
+      <a href="mailto:bereketa@hiof.no"> bereketa@hiof.no </a>
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/*  Print CSS*/
+head,
+header,
+nav,
+figure,
+aside,
+footer,
+.lesmer {
+  display: none;
+}
+
+body {
+  font-size: 12px;
+}
+
+main {
+  border: none;
+}
+
+article {
+  color: black;
+  font-family: times;
+  border: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

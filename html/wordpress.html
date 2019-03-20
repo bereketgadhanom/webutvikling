@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Bredden for forskjellige enheter -->
+  <link rel="stylesheet" type="text/css" href="../css/article.css" />
+  <link rel="stylesheet" type="text/css" href="../css/print.css" media="print" /> <!-- Print CSS filen-->
+  <link rel="icon" href="../bilder/ikon.jpg" type="image/x-icon" /> <!-- Ikon bilde -->
+  <meta charset="UTF-8" />
+  <title> Web-utvikling </title> <!-- Titelen-->
+  <meta name="author" content="Bereket G. Adhanom"> <!-- Forfatteren/Utvikleren-->
+</head>
+<!-- Body -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <a class="skip" href="#wordpress"> Skip to wordpress</a>
+    <h1 id="wordpress"> Wordpress </h1>
+  </header>
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li> <a href="index.html"> Hjem </a> </li>
+      <li class="dropdown">
+        <a href="#"> Artikler </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/git_github.html"> Git/Github </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/media_type.html"> Media Type </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/css_layout.html"> CSS Layout </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/responsiv_design.html"> Responiv design </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/wamp.html"> WAMP server </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/uu.html"> Universell utforming </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/cms.html"> CMS </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5//html/wordpress.html"> Wordpress </a> </li>
+          <li> <a href="https://github.com/bereketgadhanom/webutvikling"> Min github </a> </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#"> Obliger </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig1/html/index.html"> Oblig-1 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig2/html/index.html"> Oblig-2 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig3/html/index.html"> Oblig-3 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig4/html/index.html"> Oblig-4 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/index.html"> Oblig-5 </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Main -->
+  <main class="wordpress-install">
+    <!-- Artikler -->
+    <article>
+      <h2> Wordpress </h2>
+      <p>
+        Wordpress er en av de populære cms systemer.
+        Wordpress er en gratis open source programvare som er skrevet i PHP med MySQL som database system.
+        Det er et verktøy som brukes til å lage, håndtere og publisere nettsider uten å kreve spesielt kunnskap av kode.
+        WordPress temaer og utvidelser kan legge til nye designalternativer og tilleggs for funksjonalitet.
+      </p>
+      <h3> Fordeler med Wordpress: </h3>
+      <ul>
+        <li> Gratis, uten lisenskostnader </li>
+        <li> God synlighet av innhold i søkemotorer </li>
+        <li> Mange utbyggingsmuligheter </li>
+        <li> Enkelt å bruke </li>
+      </ul>
+      <h3> Med wordpress cms kan man lage nettsider som: </h3>
+      <ul>
+        <li> Static websites </li>
+        <li> Blogs </li>
+        <li> eCommerce stores </li>
+        <li> Membership sites </li>
+        <li> Forums </li>
+        <li> Social networks </li>
+        <li> Online courses </li>
+        <li> Portfolios</li>
+        <li> Osv. </li>
+      </ul>
+    </article>
+    <article class="wordpress-install-article">
+      <h3 id="articleheader"> Wordpress innstallasjon </h3>
+      <section>
+        <h3> Wordpress innstallasjon og Oppretting database </h3>
+        <p>
+          Gå på <code> <a href="https://nb.wordpress.org/download/"> wordpress.org </a> </code>
+          og klikk 'lastned'
+        </p>
+        <img src="../bilder/wordpress1.jpg" alt="Wordpress istallasjon">
+
+        <p> Her ser du at den lasterned en zip fil </p>
+        <img src="../bilder/wordpress2.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Åpne filplasseringen vanligvis 'nedlastninger',
+          du finner zip mappen og pakke ut den til vanlig mappe.
+        </p>
+        <img src="../bilder/wordpress3.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Kopier mappen og naviger på lokaldisken og fin WAMP64 mappen og lim
+          mappen på www under mappen til WAMP64.
+        </p>
+        <img src="../bilder/wordpress4.jpg" alt="Wordpress istallasjon">
+
+        <p> Her ser du wordpress mappen på WAMP serveren </p>
+        <img src="../bilder/wordpress5.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Nå starter du WAMP serveren ved å trykke to ganger over ikonen.
+          Du kan trykke på 'phpMyAdmin' for å logge deg inn på databasen.
+        </p>
+        <img src="../bilder/wordpress6.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Du kan skrive localhost/phpmyadmin/ for å logge deg inn. Som default er brukernavn 'root' uten passord.
+          Trykk 'gjør' eller 'logg inn'
+        </p>
+        <img src="../bilder/wordpress7.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Når er du logget deg inn.
+          Her skal du trykk på 'New' for opprette database for wordpress.
+        </p>
+        <img src="../bilder/wordpress8.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Nå velger du navn for databasen og på Unicode character set kan man velge
+          utf8_general_ci for at den er raskt. Så trykker du på Opprett.
+        </p>
+        <img src="../bilder/wordpress9.jpg" alt="Wordpress istallasjon">
+        <p>
+          Nå er vi ferdig med opprettingen av databasen.
+          Databasen som er opprettet ser du på liste til vensre.
+        </p>
+        <img src="../bilder/wordpress10.jpg" alt="Wordpress istallasjon">
+        <h3> Lage nettside med wordpress </h3>
+        <p>
+          Etter vi opprettet databasen kan vi gå på browseren
+          'localhost/wordpress(mappen som har wordpress pakken på WAMP)/wp-admin'
+          for å opprette profil til wordpress.
+          Her oppretter du nettstedsnavn, brukernavn, passord og epost.
+          Deretter trykker du på Installer wordpress.
+        </p>
+        <img src="../bilder/wordpress-r11.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Her ser du at Wordpress er installert.
+          Trykk logg inn
+        </p>
+        <img src="../bilder/wordpress-r12.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Har skriver du brukernavnet og passordet du opprettet for å logge deg inn.
+        </p>
+        <img src="../bilder/wordpress-r13.jpg" alt="Wordpress istallasjon">
+        <p>
+          Nå er wordpress ferdig installert og klar.
+        </p>
+        <img src="../bilder/wordpress-r14.jpg" alt="Wordpress istallasjon">
+
+        <p>
+          Hvis du går på localhos/wordpress, du kan se nettsiden med defaul tema og titelen du har opprettet..
+        </p>
+        <img src="../bilder/wordpress-r15.jpg" alt="Wordpress istallasjon">
+      </section>
+
+      <section>
+        <h3> Installer og bruk nye temaer </h3>
+        <p>
+          For å installer ny tema, trykker du på 'utseensde' og temaer'
+          Her ser du de standarde temaer. Trykk 'Legg til ny tema' eller på pluss tegn.
+        </p>
+        <img src="../bilder/wordpress-t16.jpg" alt="tema istallasjon">
+
+        <p>
+          Her ser du liste av tilgjengelige temaer og kan du velge temaet du liker og trykk 'Installer'
+        </p>
+        <img src="../bilder/wordpress-t17.jpg" alt="tema istallasjon">
+
+        <p>
+          Etter installesjonen blir ferdig kan man trykk på utseender
+          for å se alle installerte temaer.
+        </p>
+        <img src="../bilder/wordpress-t20.jpg" alt="tema istallasjon">
+
+        <p>
+          Trykk på temaet du vil og trykk aktiver for å aktivere temaet.
+          Nå er temaet klar og kan trykkes på 'Tilpass' for å redigere.
+        </p>
+        <img src="../bilder/wordpress-t18.jpg" alt="tema istallasjon">
+
+        <p>
+          Her kan du redigere nettsiden.
+        </p>
+        <img src="../bilder/wordpress-t19.jpg" alt="tema istallasjon">
+
+        <h3> Sette opp widgeter </h3>
+        <p>
+          Widegeter er et område på sidene dine hvor du kan putte inn de tilleggene du har installert.
+          Tilleggene som du putter inn i disse widgeter områdene blir vist på alle sider og innlegg i dette widgeter området.
+        </p>
+        <p>
+          For å sette opp eller deaktivere widgeter trykker du 'Utseende'
+          og deretter 'widgeter'
+          Nå ser du liste av tilgjengelig widgeter på venstre side og brukt widgeter på høyre siden.
+          Nå skal jeg legge til bilder og kalender fra tilgjengelige widgeter til høyre siden ved å drage inn.
+        </p>
+        <img src="../bilder/wordpress-w21.jpg" alt="Widget redigering">
+
+        <p>
+          Nå ser du bilde og kalender på liste til høyre. Man kan legge til bilde og skrive navnet på kalender her.
+        </p>
+        <img src="../bilder/wordpress-w22.jpg" alt="Widget redigering">
+
+        <p>
+          Her ser du bild og kalender widgetene jeg satt opp på nettsiden min.
+        </p>
+        <img src="../bilder/wordpress-w23.jpg" alt="Widget redigering">
+        <h3> Legge til nye sider </h3>
+        <p>
+          For å lage ny side trykker du på 'Sider' og 'Legg til ny'.
+        </p>
+        <img src="../bilder/wordpress-s23.jpg" alt="Ny side">
+
+        <p>
+          Her kan man skrive side navn, tekst og legge til bilde.
+          Etter man ferdig trykker man 'publiser' for å pulisere siden.
+          Siden er nå ferdig laget og puplisrt.
+          Jeg har laget hjemme siden min.
+        </p>
+        <img src="../bilder/wordpress-s24.jpg" alt="Ny side">
+
+        <p>
+          Nå skal trykkes på 'Sider' på nytt og 'Legg til ny' for
+          å lage ny artikkel side.
+        </p>
+        <img src="../bilder/wordpress-s25.jpg" alt="Ny side">
+
+        <p>
+          Skriv navnet til siden, kan skrives tekst og legge til bilde og trykke
+          'publiser'
+        </p>
+        <img src="../bilder/wordpress-s26.jpg" alt="Ny side">
+
+        <p>
+          Nå har jeg laget og pulisert en hjemme side og en artikkel side.
+          Siden nettsiden skal være statisk nettside, skal jeg trykke
+          på 'Instllinger' og 'leseinstllinger'.
+          Her velger jeg hjemmesiden 'Home' og Innlegsside 'Article' og
+          trykk på 'lagre endringene'
+        </p>
+        <img src="../bilder/wordpress-s27.jpg" alt="Ny side">
+
+        <p> <b> Legg til nye Innlegg </b> </p>
+        <p>
+          For å lage ny side trykker du på 'Sider' og 'Legg til ny'.
+          Her kan man skrive innleggs navn, tekst og legge til bilde.
+          Etter man er ferdig trykker man 'publiser' for å pulisere innlegget.
+          Innlegget er nå ferdig laget og publisert.
+          Jeg gjorde samme for å lage en ny innlegg til.
+        </p>
+        <img src="../bilder/wordpress-p28.jpg" alt="Ny Innlegg">
+
+        <p>
+          Her ser du de to sidene og innleggene jeg publiserte på nettsiden min.
+        </p>
+        <img src="../bilder/wordpress-p29.jpg" alt="Ny Innlegg">
+      </section>
+      <section>
+        <h3> Utvidelser </h3>
+        <p>
+          Utvidelser er tilleggsfunksjoner for WordPress, det vil si utover funksjoner som er innebygd ved WordPress-installasjon.
+          Det finnes veldig mange nedlastbare funksjoner, og disse er veldig enkelt å laste ned og installere
+        </p>
+
+        <p>
+          Jeg har valgt to viktige utvidelser for å løse denne oppgaven.
+          De er Wordfence og Yoast SEO.
+        </p>
+
+        <p>
+          <b> Hvorfor jeg valgte de to utvidelser </b>
+        </p>
+
+        <p>
+          Wordfence er en utvidelse som hjelper til å beskytte deg mot ondsinnede folk som vil hacke din WordPress-installasjon.
+          Utvidelsen vil stoppe gjentatte forsøk på innbrudd, og har en nyttig funksjon for å søke gjennom filene på nettsiden din etter ondsinnet programvare.
+          De har både gratisversjon og betalversjon. Jeg synes gratisversjon er god nok.
+        </p>
+
+        <p>
+          Yoast SEO er en søkemotoroptimalisering utvidelse som hjelper deg å optimalisere innhold.
+          Denne utvidelsen gjør søkemotoroptimalisering enklere og mer brukervennlig med sanntidsanalyse for å optimalisere dine sider og innlegg.
+        </p>
+
+        <p> <b> Installasjonen av Yoast SEO </b> </p>
+
+        <p>
+          For å installer en ny utvidelse, trykker du på 'utseensde' og 'Legg til ny'
+        </p>
+        <img src="../bilder/wordpress-u30.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Her ser du liste av tilgjengelige utvidelser.
+        </p>
+        <img src="../bilder/wordpress-u31.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Velg eller søk utvidelsen du vil ha og trykk 'Innstaller'. Siden jeg
+          velger Yoast SEO trykker jeg på den.
+        </p>
+        <img src="../bilder/wordpress-u32.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Nå er utvidelsen innstallert og trykk 'aktiver' for å aktivere utvidelsen.
+        </p>
+        <img src="../bilder/wordpress-u33.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Utvidelsen ligger på liste til venstre i kontrollpanellet.
+          Trykk på Yoast SEO og der etter på Configuration wizard for å
+          kofigurere utvidelsen.
+        </p>
+        <img src="../bilder/wordpress-u34.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Her ledet deg til konfigurasjons siden.
+          Utvidelsen skal konfigurere ferdig her.
+        </p>
+        <img src="../bilder/wordpress-u35.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Etter konfigurasjonen er ferdig sjekk om de som er på bilde er på.
+          Nå er den ferdig konfigurert og klar.
+        </p>
+        <img src="../bilder/wordpress-u41.jpg" alt="Utvidelse installasjon">
+
+        <p> <b> Installasjon av Wordfence </b> </p>
+        <p>
+          Trykk på utvidelser og Legg til ny. Søk på Wordfence og trykk 'Installer nå'
+        </p>
+        <img src="../bilder/wordpress-u36.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Nå er utvidelsen innstallert og bare trykk 'aktiver' for å aktivere den.
+        </p>
+        <img src="../bilder/wordpress-u37.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Her ser du utvidelsen på lista sammen med den første jeg innstallert.
+          Trykk på Wordfence til å fullføre installasjonen.
+        </p>
+        <img src="../bilder/wordpress-u38.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Her skriver du eposten din for at Wordfence skal sender deg varsler
+          og trykk 'Continue'
+        </p>
+        <img src="../bilder/wordpress-u39.jpg" alt="Utvidelse installasjon">
+
+        <p>
+          Wordfence er installert og aktiver ferdig.
+        </p>
+        <img src="../bilder/wordpress-u40.jpg" alt="Utvidelse installasjon">
+      </section>
+    </article>
+
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p style="color:#2f4f4f">
+      &copy; Bereket G. Adhanom <br>
+      <a href="mailto:bereketa@hiof.no"> bereketa@hiof.no </a>
+    </p>
+  </footer>
+</body>
+
+</html>

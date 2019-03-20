@@ -1,0 +1,341 @@
+/* Alt */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML*/
+html {
+  background-size: cover;
+  background-color: #c0c0c0;
+}
+
+/*  Body*/
+body {
+  font-family: serif;
+  margin: 0 auto;
+  display: grid;
+  max-width: 90%;
+  grid-template-rows: minmax(auto, max-content);
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-areas:
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main main aside"
+    "footer footer footer footer footer footer";
+}
+
+/* For enheter med maks 1024px skjerm */
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 auto;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main article {
+    width: 100%;
+  }
+}
+
+/* For enheter med maks 768px skjerm (Vanligvis mobiler)*/
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main article, img, iframe {
+    width: 100%;
+  }
+
+  aside section {
+    max-width: 100%;
+  }
+  nav>ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+}
+
+/*  Header*/
+header {
+  display: grid;
+  grid-area: header;
+  text-align: center;
+  background-image: url("../bilder/header.jpg");
+  background-size: cover;
+  min-height: 250px;
+  margin: 0 1em 0 1em;
+
+}
+
+/*  Skip to innhold navigasjon */
+a.skip, a.skip:hover,
+a.skip:visited {
+  position: absolute;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+a.skip:focus, a.skip:active {
+  display: inline-block;
+  position: static;
+  margin-left: 40%;
+  width: 20%;
+  height: 30px;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+header h1 {
+  font-style: oblique;
+  font-size: 250%;
+  max-width: 100%;
+}
+
+/* Nav */
+nav {
+  display: grid;
+  grid-area: nav;
+  margin: 0 1em 1em 1em;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #F0F8FF;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10em;
+  background-color: #2F4F4F;
+  margin: 0.6em;
+  padding: 0.5em;
+
+  text-align: center;
+}
+
+nav>ul>li>a {
+  display: block;
+  text-decoration: none;
+  font-size: 110%;
+  color: white;
+}
+
+/* dropdown navigasjon*/
+.dropdown-content {
+  display: none;
+
+  background-color: #F0F8FF;
+}
+
+.dropdown-content>li {
+  display: inline-block;
+  margin: 0.1em 0.1em 0.1em 0;
+  background-color: #2f4f4f;
+  width: 10em;
+}
+
+.dropdown-content>li>a {
+  display: block;
+  text-decoration: none;
+  font-size: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* HOVER Navigasjon*/
+nav>ul>li:hover {
+  display: block;
+  background-color: black;
+
+}
+
+.dropdown-content:hover,
+.dropdown-content>li {
+  display: inline-block;
+}
+
+.dropdown-content>li:hover {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown>.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover>.dropdown-content {
+  display: block;
+  list-style: none;
+  margin: 5% 5% 5% 35%;
+  padding: 1em;
+  z-index: 1000;
+}
+
+:focus-within>.dropdown-content {
+  display: block;
+  list-style: none;
+  margin: 5% 5% 5% 30%;
+  z-index: 1000;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: main;
+  background-color: #ffffff;
+  margin: 0 0.3em 0 1em;
+}
+
+/* Artikler */
+article {
+  width: 32%;
+  padding: 1em;
+  margin-bottom: 3em;
+  background-color: #ffffff;
+
+}
+
+article>h2 {
+  font-style: oblique;
+  font-size: 150%;
+  text-align: center;
+  margin: 0.2em;
+}
+
+article>a {
+  font-size: 130%;
+  text-align: center;
+  margin-left: 0.5em;
+}
+
+article>p {
+  margin-left: 0.5em;
+  color: #000000;
+  font-size: 110%;
+}
+
+article>figure {
+  grid-area: figure;
+  margin: 0 auto;
+  width: 100%;
+}
+
+article>figure>img {
+  width: 100%;
+  border-radius: 2em;
+}
+
+article>figure>figcaption {
+  font-style: oblique;
+  text-align: center;
+  font-size: 80%;
+  color: #2f4f4f;
+}
+
+/* Aside */
+aside {
+  display: grid;
+  grid-area: aside;
+  background-color: #dddddd;
+  margin: 0 1em 0 0em;
+}
+
+/* Seksjoner */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* margin: 0.5em; */
+  background-color: white;
+}
+
+section>p,
+section>h3 {
+  margin: 1em;
+  text-align: center;
+}
+
+section>a {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+section>a:hover {
+  color: #FF4500;
+}
+
+section>form>input {
+  margin: 0 2em;
+  font-size: 2rem;
+  font-family: fantasy;
+  background: #edb4c1;
+  border-radius: 0 1em 0 1em;
+}
+
+section>form>input:hover {
+  background: #a1cf5d;
+  border-radius: 0 1em 0 1em;
+}
+
+section>img {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+video,
+iframe {
+  width: 90%;
+  height: 200px;
+  margin: 1em;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-area: footer;
+  text-align: center;
+  margin: 1em 1em 0 1em;
+  padding: 1em 0 1em 0;
+  background-color: #ffffff;
+}

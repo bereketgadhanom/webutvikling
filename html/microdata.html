@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Bredden for forskjellige enheter -->
+  <link rel="stylesheet" type="text/css" href="../css/article.css" />
+  <link rel="stylesheet" type="text/css" href="../css/print.css" media="print" /> <!-- Print CSS filen-->
+  <link rel="icon" href="../bilder/ikon.jpg" type="image/x-icon" /> <!-- Ikon bilde -->
+  <meta charset="UTF-8" />
+  <title> Web-utvikling </title> <!-- Titelen-->
+  <meta name="author" content="Bereket G. Adhanom"> <!-- Forfatteren/Utvikleren-->
+</head>
+<!-- Body -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <a class="skip" href="#micro-data"> Skip to microdata </a>
+    <h1> Web-utvikling </h1>
+  </header>
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li> <a href="index.html"> Hjem </a> </li>
+      <li class="dropdown">
+        <a href="#"> Artikler </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/git_github.html"> Git/Github </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/media_type.html"> Media Type </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/css_layout.html"> CSS Layout </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/responsiv_design.html"> Responiv design </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/wamp.html"> WAMP server </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/uu.html"> Universell utforming </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/cms.html"> CMS </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/wordpress.html"> Wordpress </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/microdata.html"> Microdata </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/svg.html"> SVG </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/seo.html"> SEO </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/sosial-network.html"> sosial network </a> </li>
+          <li> <a href="https://github.com/bereketgadhanom/webutvikling"> Min github </a> </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#"> Obliger </a>
+        <ul class="dropdown-content">
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig1/html/index.html"> Oblig-1 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig2/html/index.html"> Oblig-2 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig3/html/index.html"> Oblig-3 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig4/html/index.html"> Oblig-4 </a> </li>
+          <li> <a href="https://itstud.hiof.no/~bereketa/webutvikling/oblig5/html/index.html"> Oblig-5 </a> </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Main -->
+  <main>
+    <!-- Artikler -->
+    <article>
+      <h2 id="micro-data"> Microdata </h2>
+      <p>
+        Mikrodata er en del av WHATWG HTML-standarden og brukes til å nest metadata innenfor eksisterende innhold på nettsider.
+        WHATWG står for «Web Hypertext Application Technology Working Group» og er en organisasjon som opprettholder og utvikler HTML og API-er for web applikasjoner.
+        Søkemotorer har begrenset forståelse for hva som er innholdet på websider.
+      </p>
+      <p>
+        Ved å legge til flere koder i HTML-koden til websidene dine, kan du hjelpe søkemotorer og andre applikasjoner til å bedre forstå innholdet ditt og vise det på en nyttig måte. Microdata er et sett med koder, introdusert med HTML5 som lar deg gjøre dette
+        Søkemotorer, web kryptere og nettlesere kan trekke ut og behandle mikrodata fra en nettside og bruke den til å gi en rikere nettleseropplevelse for brukere.
+        Søkemotorer drar stor nytte av direkte tilgang til denne strukturerte data fordi det tillater søkemotorer å forstå informasjonen på nettsider og gi mer relevante resultater til brukerne.
+        Microdata er veldig nyttig for bedrifter som selger produkter eller tjenester.
+      </p>
+      <p>
+        Google og Bing bruker schema.org microdata i sine søkeresultater.
+        Schema.org er et initiativ som ble lansert 2. juni 2011 av Bing, Google og Yahoo, men nå er den en åpen kildekode.
+        Formålet var å opprette og støtte et felles sett av vokabular for strukturerte data på nettsider.
+        Det er flere områder der man kan bruke microdata på.
+        Eks. av microdata vokabularer er Person, Article, Event, Bok, Adress, Price, Product, Service osv.
+      </p>
+      <h3> Det finnes flere attributter som hjelper oss til å legge til microdata på html-elementer. </h3>
+      <ul>
+        <li>
+          Itemscope: spesifisere html innholdet.
+        </li>
+        <li>
+          Itemtype: link til vokabular som f.eks. schema.org/person
+        </li>
+        <li>
+          Itemid: er en unik id for elementet.
+        <li>
+          Itemprop: beskriver elementets egenskaper eks. navn, forfatter, dato osv.
+        </li>
+        <li>
+          Itemref: refererer til en itemid i en annen scope.
+        </li>
+      </ul>
+      <h3> Linker til artikler om Universell utforming </h3>
+      <a href="https://uu.difi.no/kva-er-universell-utforming"> Difi artikkel om UU</a> <br>
+      <a href="https://uu.difi.no/krav-og-regelverk/losningsforslag-web"> Difi artikkel om løsningsforslag </a> <br>
+      <a href="https://www.bufdir.no/uu/Nytt/"> Bufdir artikkel om UU </a> <br>
+      <a href="http://uukurs.dibk.no/modul-1/ressurser/tekster-om-uu/hva-er-universell-utforming/">Direktoratet for byggkvalitet artikkel om UU </a> <br>
+    </article>
+    <figure>
+      <img src="../bilder/uu.jpg" alt="Universell utforming">
+      <figcaption> Bilde: Universell utforming </figcaption>
+    </figure>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <p style="color:#2f4f4f">
+      &copy; Bereket G. Adhanom <br />
+      <a href="mailto:bereketa@hiof.no"> bereketa@hiof.no </a>
+    </p>
+  </footer>
+</body>
+
+</html>
